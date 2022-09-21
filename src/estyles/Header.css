@@ -1,0 +1,18 @@
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: dimgrey;
+    padding: 10px 30px;
+}
+
+.links{
+    display: flex;
+    list-style: none;
+    
+}
+
+.links a{
+    color: white;
+    margin-left: 13px;
+}
