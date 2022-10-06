@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/app-marvel/static/css/main.0a3e5136.css",
-    "main.js": "/app-marvel/static/js/main.b47838e5.js",
-    "index.html": "/app-marvel/index.html",
-    "main.0a3e5136.css.map": "/app-marvel/static/css/main.0a3e5136.css.map",
-    "main.b47838e5.js.map": "/app-marvel/static/js/main.b47838e5.js.map"
+    "main.css": "/api-marvel/static/css/main.0a3e5136.css",
+    "main.js": "/api-marvel/static/js/main.b47838e5.js",
+    "index.html": "/api-marvel/index.html",
+    "main.0a3e5136.css.map": "/api-marvel/static/css/main.0a3e5136.css.map",
+    "main.b47838e5.js.map": "/api-marvel/static/js/main.b47838e5.js.map"
   },
   "entrypoints": [
     "static/css/main.0a3e5136.css",
