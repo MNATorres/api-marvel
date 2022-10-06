@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     color: white;
-    background-color: dimgrey;
+    background-color: rgb(164, 14, 14);
     padding: 10px 30px;
+    margin-bottom: 200px;
 }
 
 .links{
