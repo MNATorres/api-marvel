@@ -1,3 +1,15 @@
 .containerCard{
     color: white;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 340px;
+    margin: 15px;
+}
+
+.containerDesciption{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
