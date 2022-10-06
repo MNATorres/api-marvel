@@ -1,10 +1,16 @@
 .containerHeader{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     color: white;
     background-color: rgb(164, 14, 14);
-    padding: 10px 30px;
-    margin-bottom: 200px;
+    padding: 10px 5px;
+    align-items: center;
+    
+}
+
+.logoHeader{
+    width: 25vw;
 }
 
 .links{
@@ -26,7 +32,14 @@
 @media screen and (max-width: 600px) {
 
     .containerHeader{
-        align-items: baseline;
+        position: fixed;
+        align-items: center;
+        background-color: rgb(164, 14, 14, 0.5);
+        z-index: 10;
+    }
+
+    .logoHeader{
+        width: 35vw;
     }
 
     .links{

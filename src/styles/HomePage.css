@@ -11,5 +11,7 @@
 @media screen and (max-width: 600px) {
    .containerHome{
     padding: 0;
+    position: relative;
+    top: 100px;
    }
 }

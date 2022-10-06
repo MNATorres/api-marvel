@@ -5,8 +5,8 @@ import FadeMenu from './FadeMenu';
 function Header(){
     return(
         <div className="containerHeader">
-            <div className="logoHeader">
-                <p>Logo</p>
+            <div>
+                <img className="logoHeader" src="https://i.imgur.com/4Rsjob3.png" alt="Logo" />
             </div>
             <div className="menuHeader">
                 <ul className='links'>
