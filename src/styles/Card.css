@@ -24,10 +24,8 @@
     padding: 7px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .containerCard{
-        margin: 2px;
-        min-width: 47%;
-        border: 1px solid white;
+        display: none;
     }
 }

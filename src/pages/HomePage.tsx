@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "../components/Card";
 import './../styles/HomePage.css';
+import RecipeReviewCard from "../components/CardMovil";
 
 //public-key: 5c596f63542e81287e00e40042a25215
 //private-key: d501a4af1d9bef85a23f4ed378b7002921c2a8b8
@@ -17,7 +18,7 @@ interface DataCard {
     title: string
     description: string,
     id: number,
-    urls:[{url:string}]
+    urls: [{ url: string }]
 }
 
 function HomePage() {
@@ -41,13 +42,16 @@ function HomePage() {
                 return <Card
                     image={element.thumbnail.path}
                     extencion={element.thumbnail.extension}
-                    url= {element.urls[0].url}
+                    url={element.urls[0].url}
                     title={element.title}
                     description={element.description}
                     name={element.title}
                 />
             })
             }
+            <div className="containerHomeMovil">
+                <RecipeReviewCard />
+            </div>
         </div>
     );
 }

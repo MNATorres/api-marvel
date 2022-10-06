@@ -1,0 +1,10 @@
+.containerCardMovil{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .containerCardMovil{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
