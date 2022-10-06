@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "homepage": "https://mnatorres.github.io/api-marvel",
-=======
-  "homepage":"https://mnatorres.github.io/api-marvel",
->>>>>>> 59424409ef19f390f459852eefbb128f4fda7316
   "name": "marvel",
   "version": "0.1.0",
   "private": true,
