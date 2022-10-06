@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/Header.css';
+import FadeMenu from './FadeMenu';
 
 function Header(){
     return(
@@ -14,7 +15,9 @@ function Header(){
                     <li><NavLink to="/Comunidad">Comunidad</NavLink></li>
                     <li><NavLink to="/Mas-Informacion">Mas Información</NavLink></li>
                 </ul>
+                
             </div>
+            <FadeMenu />
         </div>
     )
 }

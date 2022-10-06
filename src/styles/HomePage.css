@@ -7,3 +7,9 @@
     padding: 30px;
     
 }
+
+@media screen and (max-width: 600px) {
+   .containerHome{
+    padding: 0;
+   }
+}

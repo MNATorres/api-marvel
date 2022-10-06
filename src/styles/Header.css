@@ -17,3 +17,24 @@
     color: white;
     margin-left: 13px;
 }
+
+.menuMovil{
+    display: none;
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .containerHeader{
+        align-items: baseline;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .menuMovil{
+        display: unset;
+        
+    }
+}

@@ -3,13 +3,31 @@
     border: 2px solid white;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    max-width: 30%;
     min-width: 340px;
     margin: 15px;
+}
+
+.containerCard a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    
+   
 }
 
 .containerDesciption{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 7px;
+}
+
+@media screen and (max-width: 600px) {
+    .containerCard{
+        margin: 2px;
+        min-width: 47%;
+        
+    }
 }
