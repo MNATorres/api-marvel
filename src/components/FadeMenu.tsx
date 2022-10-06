@@ -37,10 +37,10 @@ export default function FadeMenu() {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={handleClose}><NavLink to="/">Home</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/Information">Information</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/Comunidad">Comunidad</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/Mas-Informacion">Mas Información</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/">Home</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Information">Information</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Comunidad">Comunidad</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Mas-Informacion">Mas Información</NavLink></MenuItem>
       </Menu>
     </div>
   );
