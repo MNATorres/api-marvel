@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/Informacion' element={<InformationPage />} />
-        <Route path='/Comunidad' element={<CommunityPage />} />
+        <Route path='/api-marvel' element={<HomePage />} />
+        <Route path='/api-marvel/Informacion' element={<InformationPage />} />
+        <Route path='/api-marvel/Comunidad' element={<CommunityPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </div>
