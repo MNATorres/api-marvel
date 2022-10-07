@@ -47,7 +47,7 @@ export default function RecipeReviewCard() {
 
   ////////////////////
 
-  const [url, setUrl] = useState("http://gateway.marvel.com/v1/public/comics?ts=1&apikey=5c596f63542e81287e00e40042a25215&hash=8771afa70cde304a0c79b966e9b2ffa8");
+  const [url, setUrl] = useState("https://gateway.marvel.com/v1/public/comics?ts=1&apikey=5c596f63542e81287e00e40042a25215&hash=8771afa70cde304a0c79b966e9b2ffa8");
   const [item, setItem] = useState<DataCard[] | null>();
 
   useEffect(() => {
