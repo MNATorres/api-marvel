@@ -1,13 +1,39 @@
+import * as React from 'react';
+import { useState, useEffect } from 'react';
+import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
+import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { AlertTitle } from '@mui/material';
+import axios from "axios";
+import './../styles/CardMovil.css';
 
-export default function ComponentCard({ url, image,alt, title, description }){
+interface ExpandMoreProps extends IconButtonProps {
+  expand: boolean;
+}
+
+  interface PropsCard {
+    url: string,
+    image: string,
+    alt: string,
+    title: string,
+    description: string
+
+  }
+
+
+export  const ComponentCard: React.FC<PropsCard> = ({ url, image,alt, title, description }) =>{
+
+    const [expanded, setExpanded] = React.useState(false);
+
+    const handleExpandClick = () => {
+      setExpanded(!expanded);
+    };
+  
 
     const ExpandMore = styled((props: ExpandMoreProps) => {
         const { expand, ...other } = props;
