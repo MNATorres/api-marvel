@@ -64,7 +64,87 @@ export default function () {
 
   return (
     <div className="containerCardMovil">
-      {item?.map((card) => {
+      {item?.map((card, i) => {
+
+////////////////////////////////////////
+        if(i === 0){
+          return <Card sx={{ maxWidth: '45%', minWidth: "45%", margin: 1 }}>
+          <a href={card.urls[0].url}>
+          <CardMedia
+            component="img"
+            height="250"
+            image='https://i.pinimg.com/550x/08/bb/27/08bb277c3580a8d64df796882ad70aff.jpg'
+            alt={card.title}
+          />
+          </a>
+          <CardContent>
+          </CardContent>
+          <CardActions disableSpacing>
+          {card.title}
+            <ExpandMore
+              expand={expanded}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              
+              <ExpandMoreIcon />
+              
+            </ExpandMore>
+          </CardActions>
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography paragraph>Description:</Typography>         
+              <Typography paragraph>
+                {card.description}
+              </Typography>
+              <Typography>
+              Thank you for being part of the Marvel community.
+              </Typography>
+            </CardContent>
+          </Collapse>
+        </Card>
+        } else if (i === 1){
+          return <Card sx={{ maxWidth: '45%', minWidth: "45%", margin: 1 }}>
+          <a href={card.urls[0].url}>
+          <CardMedia
+            component="img"
+            height="250"
+            image='https://i.pinimg.com/736x/d7/69/3a/d7693a7321bf4f1d58672e3bb21b9042.jpg'
+            alt={card.title}
+          />
+          </a>
+          <CardContent>
+          </CardContent>
+          <CardActions disableSpacing>
+          {card.title}
+            <ExpandMore
+              expand={expanded}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              
+              <ExpandMoreIcon />
+              
+            </ExpandMore>
+          </CardActions>
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography paragraph>Description:</Typography>         
+              <Typography paragraph>
+                {card.description}
+              </Typography>
+              <Typography>
+              Thank you for being part of the Marvel community.
+              </Typography>
+            </CardContent>
+          </Collapse>
+        </Card>
+        }
+
+        ///////////////////////////////////////////////////
+
         return <Card sx={{ maxWidth: '45%', minWidth: "45%", margin: 1 }}>
       <a href={card.urls[0].url}>
       <CardMedia

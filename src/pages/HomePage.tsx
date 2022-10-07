@@ -38,11 +38,28 @@ function HomePage() {
 
     return (
         
-            
             <div className="containerHome">
 
-
-                {item?.map((element) => {
+                {item?.map((element, i) => {
+                    if(i === 0){
+                        return <Card
+                        image="https://i.pinimg.com/550x/08/bb/27/08bb277c3580a8d64df796882ad70aff"
+                        extencion={element.thumbnail.extension}
+                        url={element.urls[0].url}
+                        title={element.title}
+                        description={element.description}
+                        name={element.title}
+                    />
+                    } else if( i === 1){
+                        return <Card
+                        image="https://i.pinimg.com/736x/d7/69/3a/d7693a7321bf4f1d58672e3bb21b9042"
+                        extencion={element.thumbnail.extension}
+                        url={element.urls[0].url}
+                        title={element.title}
+                        description={element.description}
+                        name={element.title}
+                    />
+                    }
                     return <Card
                         image={element.thumbnail.path}
                         extencion={element.thumbnail.extension}
