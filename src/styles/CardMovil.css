@@ -3,7 +3,9 @@
 }
 
 @media screen and (max-width: 800px) {
+    
     .containerCardMovil{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

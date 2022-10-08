@@ -1,4 +1,5 @@
-import 'react-slideshow-image/dist/styles.css'
+import 'react-slideshow-image/dist/styles.css';
+import './../styles/Slideshow.css';
 
 import { Zoom } from "react-slideshow-image";
 

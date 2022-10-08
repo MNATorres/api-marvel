@@ -47,7 +47,7 @@ export  const ComponentCard: React.FC<PropsCard> = ({ url, image,alt, title, des
       }));
 
     return(
-        <div>
+        
         <Card sx={{ maxWidth: '45%', minWidth: "45%", margin: 1 }}>
           <a href={url}>
             <CardMedia
@@ -84,6 +84,6 @@ export  const ComponentCard: React.FC<PropsCard> = ({ url, image,alt, title, des
             </CardContent>
           </Collapse>
         </Card>
-        </div>
+       
     )
 }

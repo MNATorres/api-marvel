@@ -45,7 +45,7 @@ export default function RecipeReviewCard() {
   ////////////////////
 
   return (
-    <div className="containerCardMovil">
+    <div className='containerCardMovil'>
       {item?.map((card, i) => {
         return <ComponentCard 
         url={card.urls[0].url}
