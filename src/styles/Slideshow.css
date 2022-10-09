@@ -1,7 +1,23 @@
+.slide-container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+    
+    .imgSlide{
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .slide-container{
         position: relative;
         top: 89px;
+    }
+    .imgSlide{
+        
     }
 }
 
