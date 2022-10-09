@@ -1,27 +1,38 @@
-import React from "react";
-import { Box, Button, ScaleFade, Slide, SlideFade, useDisclosure } from '@chakra-ui/react';
+import React, { Component, useState } from "react";
+import { render } from "react-dom";
+import SlidingPane from "react-sliding-pane";
+import "react-sliding-pane/dist/react-sliding-pane.css";
+import ContentFooter from "./ContentFooter";
 
+type SlideF = { 
+        isPaneOpen: boolean;
+        isPaneOpenLeft: boolean;
+}
 
-export default function SlideFooter() {
-    const { isOpen, onToggle } = useDisclosure()
-  
-    return (
-      <>
-        <Button onClick={onToggle}>Click Me</Button>
-        <Slide direction='bottom' in={isOpen} style={{ zIndex: 10 }}>
-          <Box
-            p='40px'
-            color='white'
-            mt='4'
-            bg='teal.500'
-            rounded='md'
-            shadow='md'
-          >
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti, quod quo ratione omnis placeat sed nemo, mollitia expedita dolor nostrum laboriosam ad doloremque hic soluta vel vitae praesentium quibusdam!</p>
-          </Box>
-        </Slide>
-      </>
-    )
-  }
+export default function SlideFooter () {
+  const [state, setState] = useState<SlideF | any>({
+    isPaneOpen: false,
+    isPaneOpenLeft: false,
+  });
 
+  return (
+    <div style={{position: "absolute"}}>
+      <div style={{ marginTop: "32px"}}>
+        <button onClick={() => setState({ isPaneOpenLeft: true })}>
+          More Information
+        </button>
+      </div>
+      <SlidingPane
+        closeIcon={<div>Information</div>}
+        isOpen={state.isPaneOpenLeft}
+        title="Conozca mas sobre los proyectos"
+        from="bottom"
+        width="100%"
+        onRequestClose={() => setState({ isPaneOpenLeft: false })}
+      >
+        <ContentFooter />
+      </SlidingPane>
+    </div>
+  );
+};
 

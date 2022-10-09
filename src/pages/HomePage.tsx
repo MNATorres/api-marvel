@@ -5,6 +5,7 @@ import './../styles/HomePage.css';
 import RecipeReviewCard from "../components/CardMovil";
 import SlideshowInfinito from "../components/Slideshow";
 import Footer from "../components/Footer";
+import { ChakraProvider } from '@chakra-ui/react'
 
 //public-key: 5c596f63542e81287e00e40042a25215
 //private-key: d501a4af1d9bef85a23f4ed378b7002921c2a8b8
@@ -76,8 +77,7 @@ function HomePage() {
                     <RecipeReviewCard />
                 </div>
             </div>
-
-            <Footer />
+           
         </div>
     );
 }
