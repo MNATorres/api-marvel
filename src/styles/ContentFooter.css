@@ -1,3 +1,11 @@
 .contentFooter{
-    color: black !important;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+    
+}
+
+.contentFooter li{
+    list-style: none;
 }

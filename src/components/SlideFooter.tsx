@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import ContentFooter from "./ContentFooter";
+import './../styles/SlideFooter.css';
 
 type SlideF = { 
         isPaneOpen: boolean;
@@ -23,6 +24,7 @@ export default function SlideFooter () {
         </button>
       </div>
       <SlidingPane
+        
         closeIcon={<div>Information</div>}
         isOpen={state.isPaneOpenLeft}
         title="Conozca mas sobre los proyectos"

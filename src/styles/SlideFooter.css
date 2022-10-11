@@ -1,0 +1,5 @@
+.slide-pane_from_bottom{
+    position: absolute;
+    bottom: 0;
+    height: 20em;
+}

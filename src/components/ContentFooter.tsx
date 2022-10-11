@@ -24,6 +24,13 @@ export default function ContentFooter(){
             <li>Authors</li>
             <li>Series</li>
             </ul>
+            <ul>
+            <li><h5>Content</h5></li>
+            <li>Comics</li>
+            <li>Movies</li>
+            <li>Authors</li>
+            <li>Series</li>
+            </ul>
         </div>
     )
 }

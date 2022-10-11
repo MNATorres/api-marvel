@@ -5,8 +5,8 @@ import HomePage from './pages/HomePage';
 import InformationPage from './pages/InformationPage';
 import NotFoundPage from './pages/NotFoundPage';
 import CommunityPage from './pages/CommunityPage';
-import { ChakraProvider } from '@chakra-ui/react'
 import Footer from './components/Footer';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Route path='/api-marvel/Comunidad' element={<CommunityPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
+      <Navigation />
       <Footer />
     </div>
   );
