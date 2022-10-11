@@ -1,19 +1,17 @@
-import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
 import './../styles/Navigation.css';
+import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
-  const [value, setValue] = React.useState(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
-  };
 
-  return (
-    <div className="navigation" style={{color: 'white'}}>
-        <h1>hola</h1>
-    </div>
-  );
+    return (
+        <div className="navigation">
+            <ul>
+                <li><NavLink to="/api-marvel/">Comics</NavLink></li>
+                <li><NavLink to="/api-marvel/Information">Series</NavLink></li>
+                <li><NavLink to="/api-marvel/Comunidad">Authors</NavLink></li>
+                <li><NavLink to="/api-marvel/Mas-Informacion"> Movies</NavLink></li>
+            </ul>
+        </div>
+    );
 }

@@ -17,8 +17,8 @@ export default function SlideFooter () {
   });
 
   return (
-    <div style={{position: "absolute"}}>
-      <div style={{ marginTop: "32px"}}>
+    <div>
+      <div className="buttonFooter">
         <button onClick={() => setState({ isPaneOpenLeft: true })}>
           More Information
         </button>

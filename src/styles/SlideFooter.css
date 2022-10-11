@@ -3,3 +3,16 @@
     bottom: 0;
     height: 20em;
 }
+
+
+
+.buttonFooter{
+   max-width: 1300px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+}
+
+.buttonFooter button{
+    
+}
