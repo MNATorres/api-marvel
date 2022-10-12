@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/api-marvel/static/css/main.c91814d7.css",
-    "main.js": "/api-marvel/static/js/main.26dbdfb5.js",
+    "main.css": "/api-marvel/static/css/main.e7d372bb.css",
+    "main.js": "/api-marvel/static/js/main.312b584e.js",
     "index.html": "/api-marvel/index.html",
-    "main.c91814d7.css.map": "/api-marvel/static/css/main.c91814d7.css.map",
-    "main.26dbdfb5.js.map": "/api-marvel/static/js/main.26dbdfb5.js.map"
+    "main.e7d372bb.css.map": "/api-marvel/static/css/main.e7d372bb.css.map",
+    "main.312b584e.js.map": "/api-marvel/static/js/main.312b584e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c91814d7.css",
-    "static/js/main.26dbdfb5.js"
+    "static/css/main.e7d372bb.css",
+    "static/js/main.312b584e.js"
   ]
 }
