@@ -79,7 +79,7 @@ export  const ComponentCard: React.FC<PropsCard> = ({ url, image,alt, title, des
                 {description}
               </Typography>
               <Typography>
-                Set aside off of the heat to let rest for 10 minutes, and then serve.
+                Thank you for being part of the Marvel community.
               </Typography>
             </CardContent>
           </Collapse>

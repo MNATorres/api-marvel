@@ -7,15 +7,34 @@
     background-color: black;
 }
 
+.containerCard{
+    
+    display: flex;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .containerCard{
+        display: none;
+    }
+
+    
+
+}
 
 
-@media screen and (max-width: 1198px){
+@media screen and (max-width: 1290px){
     .containerHome{
         padding: 0;
         position: relative;
         top: 100px;
         justify-content: center;
        }
+
+       .containerCard{
+        justify-content: center;  
+    }
+
 }
 
 @media screen and (max-width: 800px) {

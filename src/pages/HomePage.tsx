@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Card from "../components/Card";
+import { CardDesktop } from "../components/Card";
 import './../styles/HomePage.css';
 import RecipeReviewCard from "../components/CardMovil";
 import SlideshowInfinito from "../components/Slideshow";
@@ -22,7 +22,21 @@ interface DataCard {
     title: string
     description: string,
     id: number,
-    urls: [{ url: string }]
+    urls: [{ url: string }],
+    creators: {
+        items: [
+            {
+
+                name: string,
+                role: string
+            }
+        ],
+
+    }
+}
+
+function getAuthorString(item: DataCard) {
+    return item.creators.items.map((element) => `${element.name}(${element.role})`).join(", ");
 }
 
 function HomePage() {
@@ -45,33 +59,19 @@ function HomePage() {
             <div className="containerHome">
 
                 {item?.map((element, i) => {
-                    if (i === 0) {
-                        return <Card
-                            image="https://i.pinimg.com/550x/08/bb/27/08bb277c3580a8d64df796882ad70aff"
-                            extencion={element.thumbnail.extension}
-                            url={element.urls[0].url}
-                            title={element.title}
-                            description={element.description}
-                            name={element.title}
-                        />
-                    } else if (i === 1) {
-                        return <Card
-                            image="https://i.pinimg.com/736x/d7/69/3a/d7693a7321bf4f1d58672e3bb21b9042"
-                            extencion={element.thumbnail.extension}
-                            url={element.urls[0].url}
-                            title={element.title}
-                            description={element.description}
-                            name={element.title}
-                        />
-                    }
-                    return <Card
-                        image={element.thumbnail.path}
-                        extencion={element.thumbnail.extension}
-                        url={element.urls[0].url}
-                        title={element.title}
-                        description={element.description}
-                        name={element.title}
-                    />
+
+                    return (
+                        <div key={Math.random()} className="containerCard">
+                            <CardDesktop
+                                image={element.thumbnail.path}
+                                extencion={element.thumbnail.extension}
+                                url={element.urls[0].url}
+                                title={element.title}
+                                name={element.title}
+                                author={getAuthorString(element)} />
+
+                        </div>
+                    )
                 })
                 }
                 <div className="containerHomeMovil">

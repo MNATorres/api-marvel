@@ -48,6 +48,7 @@ export default function RecipeReviewCard() {
     <div className='containerCardMovil'>
       {item?.map((card, i) => {
         return <ComponentCard 
+        key={Math.random()}
         url={card.urls[0].url}
         image={`${card.thumbnail.path}.${card.thumbnail.extension}`}
         alt={card.title} 
