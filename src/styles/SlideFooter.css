@@ -1,18 +1,37 @@
+
+
 .slide-pane_from_bottom{
     position: absolute;
     bottom: 0;
     height: 20em;
+    background-color: red;
+    color: white;
 }
 
-
+.slide-pane__header{
+    background-color: rgb(91, 15, 15);
+}
 
 .buttonFooter{
    max-width: 1300px;
    margin: 0 auto;
    display: flex;
    justify-content: center;
+   
 }
 
 .buttonFooter button{
-    
+    border: none;
+    padding: 5px;
+    transition: ease-in-out 400ms;
+    color: white;
+    background-color: red;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.buttonFooter button:hover{
+    background-color: rgb(91, 15, 15);
 }

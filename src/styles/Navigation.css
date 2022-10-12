@@ -6,23 +6,25 @@
 }
 
 .navigation ul{
-    
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto;
     display: flex;
-   justify-content: center;
+    justify-content: space-between;
 }
 
 .navigation ul li{
     color: white;
     text-decoration: none;
     list-style: none;
-    margin: 10px;
+    
 }
 
 .navigation ul a{
     list-style: none;
     text-decoration: none;
     color: white;
-    padding: 10px;
+    
 }
 
 .navigation ul a:hover{
