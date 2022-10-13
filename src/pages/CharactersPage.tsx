@@ -1,13 +1,13 @@
 import { SimplePage } from "../components/SimplePage";
 
-function InformationPage() {
+function CharactersPage() {
     return (
         <SimplePage>
             <div className="containerHome">
-                <h1>Information</h1>
+                <h1>Character</h1>
             </div>
         </SimplePage>
     );
 }
 
-export default InformationPage;
+export default CharactersPage;

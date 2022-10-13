@@ -1,33 +1,39 @@
 .navigation{
     color: white;
-    margin: 250px 0 150px 0;
+    margin: 150px 0 150px 0;
     width: 100%;
     
 }
 
 .navigation ul{
     width: 70%;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    height:100px;
 }
 
 .navigation ul li{
     color: white;
     text-decoration: none;
     list-style: none;
-    
+    margin: 5px;
 }
 
 .navigation ul a{
     list-style: none;
     text-decoration: none;
+    background-color: rgb(255, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
     color: white;
-    
+    font-weight: bold;
+    transition: ease-in 200ms;
 }
 
 .navigation ul a:hover{
-    border-bottom: 1px solid red;
+    border-bottom: 3px solid red;
     color: red;
+    background-color: rgb(255, 0, 0, 0.3);
 }

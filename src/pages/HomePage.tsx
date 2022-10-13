@@ -4,8 +4,6 @@ import { CardDesktop } from "../components/Card";
 import './../styles/HomePage.css';
 import RecipeReviewCard from "../components/CardMovil";
 import SlideshowInfinito from "../components/Slideshow";
-import Footer from "../components/Footer";
-import { ChakraProvider } from '@chakra-ui/react'
 import { SimplePage } from "../components/SimplePage";
 
 //public-key: 5c596f63542e81287e00e40042a25215

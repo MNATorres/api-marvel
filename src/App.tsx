@@ -1,17 +1,23 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage';
-import InformationPage from './pages/InformationPage';
+import CharactersPage from './pages/CharactersPage';
 import NotFoundPage from './pages/NotFoundPage';
-import CommunityPage from './pages/CommunityPage';
+import CreatorsPage from './pages/CreatorsPage';
+import EventsPage from './pages/EventsPage';
+import Series from './pages/SeriesPage';
+import Stories from './pages/StoriesPage';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path='/api-marvel' element={<HomePage />} />
-        <Route path='/api-marvel/Informacion' element={<InformationPage />} />
-        <Route path='/api-marvel/Comunidad' element={<CommunityPage />} />
+        <Route path='/api-marvel/Characters' element={<CharactersPage />} />
+        <Route path='/api-marvel/Creators' element={<CreatorsPage />} />
+        <Route path='/api-marvel/Events' element={<EventsPage />} />
+        <Route path='/api-marvel/Series' element={<Series />} />
+        <Route path='/api-marvel/Stories' element={<Stories />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </div>

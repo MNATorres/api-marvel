@@ -1,13 +1,13 @@
 import { SimplePage } from "../components/SimplePage";
 
-function CommunityPage(){
+function EventsPage(){
     return(
         <SimplePage>
         <div className="containerCommunity">
-            <h3>Comunidad</h3>
+            <h3>Events</h3>
         </div>
         </SimplePage>
     )
 }
 
-export default CommunityPage;
+export default EventsPage;

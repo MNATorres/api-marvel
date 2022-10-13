@@ -1,12 +1,16 @@
+
+
 .containerCard a{
     height: 500px;
     width: 380px;
     margin: 10px;
+    z-index: 0;
+    
 }
 
 .src-NewsHeaderCard-NewsHeader-styles-module__bottom--9j9uV div:first-child{
     max-width: 60%;
-    text-overflow: ellipsis;
+    
 }
 
 

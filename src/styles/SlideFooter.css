@@ -1,15 +1,16 @@
-
-
 .slide-pane_from_bottom{
     position: absolute;
     bottom: 0;
     height: 20em;
-    background-color: red;
-    color: white;
+    color: black;
+    box-sizing: border-box;
+    border: 5px solid red;
+    
 }
 
 .slide-pane__header{
-    background-color: rgb(91, 15, 15);
+    background-color: red;
+    color: white;
 }
 
 .buttonFooter{
@@ -33,5 +34,5 @@
 }
 
 .buttonFooter button:hover{
-    background-color: rgb(91, 15, 15);
+    background-color: rgb(255, 0, 0, 0.8);
 }
