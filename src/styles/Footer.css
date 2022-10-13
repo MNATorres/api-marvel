@@ -4,7 +4,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 0;
-    
+   
 }
 
 .authorFooter{
@@ -14,3 +14,18 @@
     color: white;
 }
 
+.footerMovil{
+    display: none;
+    background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .footerDesktop{
+        display: none;
+    }
+
+    .footerMovil{
+        display: unset;
+        background: red;
+    }
+}

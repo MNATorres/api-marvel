@@ -37,3 +37,9 @@
     color: red;
     background-color: rgb(255, 0, 0, 0.3);
 }
+
+@media screen and (max-width: 800px) {
+    .navigation ul{       
+        height:130px;
+    }
+}

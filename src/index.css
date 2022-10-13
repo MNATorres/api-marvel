@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;900&family=Josefin+Sans:wght@300;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Open+Sans&family=Roboto+Mono:ital,wght@1,700&family=Roboto:wght@400;500;900&display=swap');
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 331px;

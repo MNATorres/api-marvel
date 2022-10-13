@@ -35,10 +35,7 @@
     border-bottom: 2px solid white;
 }
 
-.menuMovil{
-    display: none;
-    
-}
+
 
 
 
@@ -59,8 +56,5 @@
         display: none;
     }
 
-    .menuMovil{
-        display: unset;
-        
-    }
+    
 }
