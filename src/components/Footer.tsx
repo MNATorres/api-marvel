@@ -15,7 +15,8 @@ export default function Footer() {
                 <FooterMovil />
             </div>
             <div className="authorFooter">
-                <p>Pagina desarrollad por Matias Torres</p>
+                <p> Page developed by Matias Torres </p>
+                <p> Thank you for viewing the content </p>
             </div>
         </div>
     )
