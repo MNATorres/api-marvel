@@ -25,7 +25,7 @@ export default function MenuContent() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        style={{color: "white", fontSize: "18PX"}}
+        style={{color: "white", fontSize: "15px"}}
       >
         Content <BiChevronDown style={{fontSize: "22px"}}/>
       </Button>

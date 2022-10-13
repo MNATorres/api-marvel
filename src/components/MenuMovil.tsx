@@ -6,6 +6,7 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import { NavLink } from 'react-router-dom';
 import './../styles/MenuMovil.css';
+import { GiHamburgerMenu } from "react-icons/gi"
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
@@ -66,7 +67,7 @@ export default function TemporaryDrawer() {
     <div className='menuMovil'>
       {(['right'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <GiHamburgerMenu style={{fontSize:"2.3rem", color: "white", cursor:"pointer"}} onClick={toggleDrawer(anchor, true)} />
           <Drawer
             anchor={anchor}
             open={state[anchor]}
@@ -79,4 +80,4 @@ export default function TemporaryDrawer() {
     </div>
   );
 }
-// import { GiHamburgerMenu } from "react-icons/gi"; <GiHamburgerMenu style={{fontSize:"2.3rem", color: "white"}}/>
+// import { GiHamburgerMenu } from "react-icons/gi"; <GiHamburgerMenu style={{fontSize:"2.3rem", color: "white"}}/>  <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>

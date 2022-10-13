@@ -29,7 +29,7 @@
     box-sizing: border-box;
     text-decoration: none;
     transition:ease 500ms;  
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .menuHeader button:hover{
