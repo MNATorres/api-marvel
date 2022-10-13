@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/Header.css';
 import FadeMenu from './FadeMenu';
+import MenuContent from './MenuContent';
+import Button from '@mui/material/Button';
 
 function Header() {
     return (
@@ -11,13 +13,13 @@ function Header() {
                 </NavLink>
             </div>
             <div className="menuHeader">
-                <ul className='links'>
-                    <li><NavLink to="/api-marvel/">Home</NavLink></li>
-                    <li><NavLink to="/api-marvel/Information">Information</NavLink></li>
-                    <li><NavLink to="/api-marvel/Comunidad">Comunidad</NavLink></li>
-                    <li><NavLink to="/api-marvel/Mas-Informacion">Mas Información</NavLink></li>
-                </ul>
-
+                
+                    <MenuContent />
+                    
+                    <Button><a href="https://github.com/MNATorres/api-marvel">Repository</a></Button>
+                    <Button><a href="https://mnatorres.github.io/curriculum-Matias-Torres/">About the Developer</a></Button>
+                    <Button><a href="https://github.com/MNATorres">GitHub</a></Button>
+    
             </div>
             <FadeMenu />
         </div>

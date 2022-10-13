@@ -14,15 +14,25 @@
     width: 205px;
 }
 
-.links{
+.menuHeader{
     display: flex;
     list-style: none;
     
 }
 
-.links a{
+.menuHeader a{
+    text-decoration: none;
+}
+
+.menuHeader button a{
     color: white;
-    margin-left: 13px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition:ease 500ms;  
+}
+
+.menuHeader button:hover{
+    border-bottom: 2px solid white;
 }
 
 .menuMovil{
