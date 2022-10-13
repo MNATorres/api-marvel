@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './../styles/ContentFooter.css';
 
 export default function ContentFooter(){
@@ -5,7 +6,7 @@ export default function ContentFooter(){
         <div className="contentFooter">
             <ul>
             <li><h5>Content</h5></li>
-            <li>Comics</li>
+            <li><NavLink to="/api-marvel/">Comics</NavLink></li>
             <li>Movies</li>
             <li>Authors</li>
             <li>Series</li>

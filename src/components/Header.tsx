@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/Header.css';
-import FadeMenu from './FadeMenu';
+import MenuMovil from './MenuMovil';
 import MenuContent from './MenuContent';
 import Button from '@mui/material/Button';
 
@@ -21,7 +21,7 @@ function Header() {
                     <Button><a href="https://github.com/MNATorres">GitHub</a></Button>
     
             </div>
-            <FadeMenu />
+            <MenuMovil />
         </div>
     )
 }
