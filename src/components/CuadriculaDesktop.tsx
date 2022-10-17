@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { DataCard } from "../services/api";
-import { CardDesktop } from "./Card"
+import { CardDesktop } from "./Card";
 import './../styles/CuadriculaDesktop.css';
 
 interface CuadriculaDesktopType{

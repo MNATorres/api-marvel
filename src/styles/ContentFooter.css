@@ -6,6 +6,14 @@
     
 }
 
-.contentFooter li{
+.contentFooter li, .contentFooter li a{
+    text-decoration: none;
     list-style: none;
+    color: black;
+    transition: ease-in-out 200ms;
+}
+
+.contentFooter li a:hover{
+    color: red;
+    font-weight: bold;
 }

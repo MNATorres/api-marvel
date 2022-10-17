@@ -23,9 +23,7 @@ interface DataCard {
 export default function RecipeReviewCard() {
   const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  
 
   ////////////////////
 
