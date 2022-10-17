@@ -5,6 +5,8 @@ import "react-sliding-pane/dist/react-sliding-pane.css";
 import ContentFooter from "./ContentFooter";
 import './../styles/SlideFooter.css';
 import { BiChevronDown } from "react-icons/bi";
+import { BsXLg } from "react-icons/bs";
+
 
 type SlideF = { 
         isPaneOpen: boolean;
@@ -26,9 +28,9 @@ export default function SlideFooter () {
       </div>
       <SlidingPane
         
-        closeIcon={<div>Information</div>}
+        closeIcon={<div ><BsXLg style={{width: "200px"}} /></div>}
         isOpen={state.isPaneOpenLeft}
-        title="Conozca mas sobre los proyectos"
+        title="Learn More"
         from="bottom"
         width="100%"
         onRequestClose={() => setState({ isPaneOpenLeft: false })}

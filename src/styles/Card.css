@@ -1,8 +1,7 @@
 
-
 .containerCard a{
-    height: 500px;
-    width: 380px;
+    height: 400px;
+    width: 280px;
     margin: 10px;
     z-index: 0;
     
@@ -13,4 +12,32 @@
     
 }
 
+.src-NewsHeaderCard-NewsHeaderBackground-styles-module__news-header-background--38y5L{
+border: 2px solid red;
+border-radius: 5px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+@media screen and (max-width: 818px) {
+    .containerCard a{
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    z-index: 0;
+    
+}
+}
+
+@media screen and (max-width: 818px) {
+    .containerCard a{
+    height: 400px;
+    
+    display: flex;
+    flex: 1 1;
+    
+    margin: 10px;
+    z-index: 0;
+    
+}
+}
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { DataCard } from "../services/api";
 import { CardDesktop } from "./Card"
+import './../styles/CuadriculaDesktop.css';
 
 interface CuadriculaDesktopType{
     fetcher:  () => Promise<DataCard[]>
@@ -15,7 +16,7 @@ export const CuadriculaDesktop :React.FC<CuadriculaDesktopType> =({fetcher}) => 
     }, [])
 
     return (
-        <div>
+        <div className="CuadriculaDesktop">
             {data?.map((element, i) => {
 
                 return (

@@ -1,11 +1,16 @@
+import RecipeReviewCard from "../components/CardMovil";
+import { CuadriculaDesktop } from "../components/CuadriculaDesktop";
 import { SimplePage } from "../components/SimplePage";
+import { getCreators } from "../services/api";
 
 function CreatorsPage(){
     return(
         <SimplePage>
-        <div className="containerCommunity">
-            <h3>CreatorsPage</h3>
-        </div>
+            
+            <div className="containerCharacter">
+
+                
+            </div>
         </SimplePage>
     )
 }

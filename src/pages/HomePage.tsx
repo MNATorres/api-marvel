@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import { CardDesktop } from "../components/Card";
 import './../styles/HomePage.css';
 import RecipeReviewCard from "../components/CardMovil";
 import SlideshowInfinito from "../components/Slideshow";
@@ -20,16 +18,16 @@ import { CuadriculaDesktop } from "../components/CuadriculaDesktop";
 
 function HomePage() {
 
-    
+
 
     return (
         <SimplePage>
             <SlideshowInfinito />
             <div className="containerHome">
 
-               <CuadriculaDesktop
-               fetcher={getComics}
-               />
+                <CuadriculaDesktop
+                    fetcher={getComics}
+                />
 
                 <div className="containerHomeMovil">
                     <RecipeReviewCard />

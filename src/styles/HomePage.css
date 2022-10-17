@@ -1,9 +1,7 @@
 .containerHome{
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
+    
     
 }
 
@@ -24,13 +22,6 @@
 
 
 @media screen and (max-width: 1290px){
-    .containerHome{
-        padding: 0;
-        position: relative;
-        top: 100px;
-        justify-content: center;
-       }
-
        .containerCard{
         justify-content: center;  
     }
