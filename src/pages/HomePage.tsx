@@ -1,5 +1,5 @@
 import './../styles/HomePage.css';
-import RecipeReviewCard from "../components/CardMovil";
+import {CuadriculaMovil} from "../components/CuadriculaMovil";
 import SlideshowInfinito from "../components/Slideshow";
 import { SimplePage } from "../components/SimplePage";
 import { DataCard, getComics } from "../services/api";
@@ -30,7 +30,8 @@ function HomePage() {
                 />
 
                 <div className="containerHomeMovil">
-                    <RecipeReviewCard />
+                    <CuadriculaMovil
+                    fetcher={getComics} />
                 </div>
             </div>
         </SimplePage>

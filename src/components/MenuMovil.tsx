@@ -40,7 +40,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <ul className='listMenumovil1'>
+        <ul className='listMenumovil2'>
           <li><h3>Content</h3></li>
           <li><NavLink to="/api-marvel/">Comics</NavLink></li>
           <li><NavLink to="/api-marvel/Characters">Characters</NavLink></li>
@@ -53,13 +53,21 @@ export default function TemporaryDrawer() {
       <Divider />
       <List>
         <ul className='listMenumovil2'>
-          <li><h3>More Information</h3></li>
+          <li><h3>About the Developer</h3></li>
           <li><a href="https://github.com/MNATorres/api-marvel">Repository</a></li>
-          <li><a href="https://mnatorres.github.io/curriculum-Matias-Torres/">About the Developer</a></li>
+          <li><a href="https://mnatorres.github.io/curriculum-Matias-Torres/">Curriculum</a></li>
           <li><a href="https://github.com/MNATorres">GitHub</a></li>
+
         </ul>
       </List>
-      
+      <Divider />
+      <List>
+        <ul className='listMenumovil2'>
+          <li><h3>Other Projet</h3></li>
+          <li><a href="https://mnatorres.github.io/Coffe-and-Coke/">Coffe and Coke</a></li>
+        </ul>
+      </List>
+
     </Box>
   );
 
@@ -67,7 +75,7 @@ export default function TemporaryDrawer() {
     <div className='menuMovil'>
       {(['right'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
-          <GiHamburgerMenu style={{fontSize:"2.3rem", color: "white", cursor:"pointer"}} onClick={toggleDrawer(anchor, true)} />
+          <GiHamburgerMenu style={{ fontSize: "2.3rem", color: "white", cursor: "pointer" }} onClick={toggleDrawer(anchor, true)} />
           <Drawer
             anchor={anchor}
             open={state[anchor]}

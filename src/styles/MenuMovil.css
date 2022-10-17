@@ -8,21 +8,6 @@
 }
 
 
-.listMenumovil1 li{
-    list-style: none;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.listMenumovil1 li:first-child{
-    color: red;
-}
-
-.listMenumovil1 li a{
-    text-decoration: none;
-    color: black;
-}
-
 .listMenumovil2 li{
     list-style: none;
     margin-bottom: 10px;
@@ -32,6 +17,10 @@
 .listMenumovil2 li a{
     text-decoration: none;
     color: black;
+}
+
+.listMenumovil2 li a:hover{
+    color: red;
 }
 
 .listMenumovil2 li:first-child{

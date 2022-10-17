@@ -1,7 +1,5 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-
-import axios from "axios";
 import './../styles/CardMovil.css';
 import { ComponentCard } from './ComponentCard';
 
@@ -18,33 +16,28 @@ interface DataCard {
 }
 //////////////////////////
 
+interface CuadriculaMovilType{
+  fetcher:  () => Promise<DataCard[]>
+}
 
 
-export default function RecipeReviewCard() {
-  const [expanded, setExpanded] = React.useState(false);
+
+export const CuadriculaMovil :React.FC<CuadriculaMovilType> =({fetcher}) => {
+  const [data, setData] = useState<DataCard[] | null>();
+
+    useEffect(() => {
+        fetcher().then(setData);
+    }, [])
 
   
 
   ////////////////////
 
-  const [url, setUrl] = useState("https://gateway.marvel.com/v1/public/comics?ts=1&apikey=5c596f63542e81287e00e40042a25215&hash=8771afa70cde304a0c79b966e9b2ffa8");
-  const [item, setItem] = useState<DataCard[] | null>();
-
-  useEffect(() => {
-    const fetch = async () => {
-      const res = await axios.get(url)
-      console.log(res.data.data.results);
-      setItem(res.data.data.results)
-      console.log(item)
-    }
-    fetch();
-  }, [url])
-
   ////////////////////
 
   return (
     <div className='containerCardMovil'>
-      {item?.map((card, i) => {
+      {data?.map((card, i) => {
         return <ComponentCard 
         key={Math.random()}
         url={card.urls[0].url}

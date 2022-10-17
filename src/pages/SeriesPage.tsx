@@ -1,20 +1,23 @@
-import RecipeReviewCard from "../components/CardMovil";
 import { CuadriculaDesktop } from "../components/CuadriculaDesktop";
 import { SimplePage } from "../components/SimplePage";
 import { getSeries } from "../services/api";
+import { CuadriculaMovil } from "../components/CuadriculaMovil";
+import './../styles/ContainerSeries.css';
 
 function Series(){
     return(
         <SimplePage>
             
-        <div className="containerCharacter">
+        <div className="containerSeries">
 
             <CuadriculaDesktop
                 fetcher={getSeries}
             />
 
             <div className="containerHomeMovil">
-                <RecipeReviewCard />
+                <CuadriculaMovil
+                fetcher={getSeries}
+                />
             </div>
         </div>
     </SimplePage>

@@ -1,4 +1,4 @@
-import RecipeReviewCard from "../components/CardMovil";
+import {CuadriculaMovil} from "../components/CuadriculaMovil";
 import { CuadriculaDesktop } from "../components/CuadriculaDesktop";
 import { SimplePage } from "../components/SimplePage";
 import { getCharacters } from "../services/api";

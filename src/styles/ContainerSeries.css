@@ -1,0 +1,10 @@
+.containerSeries{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+    .containerSeries{
+        margin: 100px auto 0;
+    }
+}
