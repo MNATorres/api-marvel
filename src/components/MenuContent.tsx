@@ -40,10 +40,10 @@ export default function MenuContent() {
         TransitionComponent={Fade}
       >
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/">Comics</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Series"> Series</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Characters">Characters</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Creators">Creators</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Events"> Events</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Series"> Series</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Stories"> Stories</NavLink></MenuItem>
       </Menu>
     </div>

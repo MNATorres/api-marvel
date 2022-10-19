@@ -15,10 +15,9 @@
 
 .buttonFooter{
    max-width: 1300px;
-   margin: 0 auto;
+   margin: 0 auto -8px;
    display: flex;
    justify-content: center;
-   
 }
 
 .buttonFooter button{
