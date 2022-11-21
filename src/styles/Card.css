@@ -1,11 +1,12 @@
 
 .containerCard a{
-    height: 400px;
-    width: 280px;
-    margin: 10px;
+    height: 300px;
+    width: 300px;
+    margin: 30px 10px;
     z-index: 0;
     
 }
+
 
 .src-NewsHeaderCard-NewsHeader-styles-module__bottom--9j9uV div:first-child{
     max-width: 60%;
@@ -13,8 +14,6 @@
 }
 
 .src-NewsHeaderCard-NewsHeaderBackground-styles-module__news-header-background--38y5L{
-border: 2px solid red;
-border-radius: 5px;
 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 

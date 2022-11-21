@@ -5,7 +5,7 @@ import { Zoom } from "react-slideshow-image";
 
 // style was imported in index.css
 // import "react-slideshow-image/dist/styles.css";
-const images: string[] = [ "https://c.tenor.com/c7iRHlK9vIMAAAAC/marvel-comics.gif", "https://c.tenor.com/6Vh68dxbnZkAAAAC/marvel-logo.gif", "http://24.media.tumblr.com/579b696c718b6765cfe7bca94c88310e/tumblr_mlcaghBDPS1r7fvemo1_500.gif","https://25.media.tumblr.com/tumblr_m9jfm1NchQ1rab6tio1_500.gif"];
+const images: string[] = [ "https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2022/03/marvel-studios-portada.jpg?resize=1068%2C601&ssl=1", "https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2022/06/Marvel-Studios-SDCC-destacada.jpg", "https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/EKIMZMZAKFHKHC6GV7LMELQT3Y.jpeg","https://i0.wp.com/sidisney.com/wp-content/uploads/2020/12/DisneyPlus-Marvel-01.jpg?fit=1024%2C683&ssl=1"];
 
 type Properies = {
   duration: number;
