@@ -25,7 +25,6 @@ export default function FooterMovil() {
                         <li><NavLink to="/api-marvel/Creators">Creators</NavLink></li>
                         <li><NavLink to="/api-marvel/Events"> Events</NavLink></li>
                         <li><NavLink to="/api-marvel/Series"> Series</NavLink></li>
-                        <li><NavLink to="/api-marvel/Stories"> Stories</NavLink></li>
                     </ul>
                 </AccordionDetails>
             </Accordion>

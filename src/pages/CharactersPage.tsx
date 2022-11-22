@@ -1,17 +1,24 @@
-import {CuadriculaMovil} from "../components/CuadriculaMovil";
 import { CuadriculaDesktop } from "../components/CuadriculaDesktop";
 import { SimplePage } from "../components/SimplePage";
 import { getCharacters } from "../services/api";
+import { CuadriculaMovil } from "../components/CuadriculaMovil";
 
 function CharactersPage() {
     return (
         <SimplePage>
-            
-        <div className="containerCharacter">
+            <div className="containerCharacter">
+            <CuadriculaDesktop
+                   fetcher={getCharacters}
+                />
 
-            Holsa
-        </div>
-    </SimplePage>
+                <div className="containerHomeMovil">
+                    <CuadriculaMovil
+                        fetcher={getCharacters}
+                    />
++                </div>
+                
+            </div>
+        </SimplePage>
     );
 }
 

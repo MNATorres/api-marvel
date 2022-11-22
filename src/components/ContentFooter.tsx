@@ -11,7 +11,6 @@ export default function ContentFooter() {
                 <li><NavLink to="/api-marvel/Creators">Creators</NavLink></li>
                 <li><NavLink to="/api-marvel/Events"> Events</NavLink></li>
                 <li><NavLink to="/api-marvel/Series"> Series</NavLink></li>
-                <li><NavLink to="/api-marvel/Stories"> Stories</NavLink></li>
             </ul>
             <ul>
                 <li><h3>Developer</h3></li>

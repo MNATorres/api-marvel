@@ -4,12 +4,21 @@ import { CardDesktop } from "./Card";
 import './../styles/CuadriculaDesktop.css';
 
 interface CuadriculaDesktopType{
-    fetcher:  () => Promise<DataCard[]>
+    fetcher:  () => Promise<CuadriculaDataType[]>
 }
 
+export interface CuadriculaDataType {
+       imagePath: string,
+        extension: string,
+       url: string,
+       title: string,
+       name: string,
+    author: string,
+       description: string
+    }
 
 export const CuadriculaDesktop :React.FC<CuadriculaDesktopType> =({fetcher}) => {
-    const [data, setData] = useState<DataCard[] | null>();
+    const [data, setData] = useState<CuadriculaDataType[] | null>();
 
     useEffect(() => {
         fetcher().then(setData);
@@ -22,12 +31,12 @@ export const CuadriculaDesktop :React.FC<CuadriculaDesktopType> =({fetcher}) => 
                 return (
                     <div key={Math.random()} className="containerCard">
                         <CardDesktop
-                            image={element.thumbnail.path}
-                            extencion={element.thumbnail.extension}
-                            url={element.urls[0].url}
+                            image={element.imagePath}
+                            extencion={element.extension}
+                            url={element.url}
                             title={element.title}
-                            name={element.title}
-                            author={getAuthorString(element)} />
+                            name={element.name}
+                            author={element.author}  />
 
                     </div>
                 )
@@ -37,6 +46,4 @@ export const CuadriculaDesktop :React.FC<CuadriculaDesktopType> =({fetcher}) => 
     )
 }
 
-function getAuthorString(item: DataCard) {
-    return item.creators.items.map((element) => `${element.name}(${element.role})`).join(", ");
-}
+

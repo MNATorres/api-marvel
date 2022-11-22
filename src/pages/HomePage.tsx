@@ -1,8 +1,8 @@
 import './../styles/HomePage.css';
-import {CuadriculaMovil} from "../components/CuadriculaMovil";
+import { CuadriculaMovil } from "../components/CuadriculaMovil";
 import SlideshowInfinito from "../components/Slideshow";
 import { SimplePage } from "../components/SimplePage";
-import { DataCard, getComics } from "../services/api";
+import { getComics } from "../services/api";
 import { CuadriculaDesktop } from "../components/CuadriculaDesktop";
 
 //public-key: 5c596f63542e81287e00e40042a25215
@@ -26,8 +26,8 @@ function HomePage() {
             <div className="containerHome">
 
                 <CuadriculaDesktop
-                    fetcher={getComics}
-                />
+                    fetcher={getComics} />
+                
 
                 <div className="containerHomeMovil">
                     <CuadriculaMovil

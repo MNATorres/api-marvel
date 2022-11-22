@@ -2,28 +2,20 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import './../styles/CardMovil.css';
 import { ComponentCard } from './ComponentCard';
-
+import { CuadriculaDataType } from './CuadriculaDesktop';
 
 ////////////////////////
-interface DataCard {
-  thumbnail: {
-    extension: string; path: string
-  };
-  title: string
-  description: string,
-  id: number,
-  urls: [{ url: string }],
-}
+
 //////////////////////////
 
 interface CuadriculaMovilType{
-  fetcher:  () => Promise<DataCard[]>
+  fetcher:  () => Promise<CuadriculaDataType[]>
 }
 
 
 
 export const CuadriculaMovil :React.FC<CuadriculaMovilType> =({fetcher}) => {
-  const [data, setData] = useState<DataCard[] | null>();
+  const [data, setData] = useState<CuadriculaDataType[] | null>();
 
     useEffect(() => {
         fetcher().then(setData);
@@ -40,8 +32,8 @@ export const CuadriculaMovil :React.FC<CuadriculaMovilType> =({fetcher}) => {
       {data?.map((card, i) => {
         return <ComponentCard 
         key={Math.random()}
-        url={card.urls[0].url}
-        image={`${card.thumbnail.path}.${card.thumbnail.extension}`}
+        url={card.url}
+        image={`${card.imagePath}.${card.extension}`}
         alt={card.title} 
         title={card.title}
         description={card.description}
