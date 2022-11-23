@@ -111,7 +111,7 @@ export const getCreators= async () => {
 }
 
 export const getEvents= async () => {
-    const res = await axios.get(getUrl('creators'))
+    const res = await axios.get(getUrl('events'))
             console.log(res.data.data.results);
             return res.data.data.results.map(dataEventsToCuadriculaDataType);
 }
