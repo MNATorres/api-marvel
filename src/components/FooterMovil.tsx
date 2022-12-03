@@ -22,7 +22,6 @@ export default function FooterMovil() {
                     <ul className='listFooterMovil'>
                         <li><NavLink to="/api-marvel/">Comics</NavLink></li>
                         <li><NavLink to="/api-marvel/Characters">Characters</NavLink></li>
-                        <li><NavLink to="/api-marvel/Creators">Creators</NavLink></li>
                         <li><NavLink to="/api-marvel/Events"> Events</NavLink></li>
                         <li><NavLink to="/api-marvel/Series"> Series</NavLink></li>
                     </ul>

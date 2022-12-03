@@ -42,7 +42,6 @@ export default function MenuContent() {
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/">Comics</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Series"> Series</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Characters">Characters</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Creators">Creators</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Events"> Events</NavLink></MenuItem>
       </Menu>
     </div>
