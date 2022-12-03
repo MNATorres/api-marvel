@@ -2,16 +2,15 @@
     color: white;
     margin: 150px 0 150px 0;
     width: 100%;
-    
 }
 
 .navigation ul{
-    width: 70%;
-    max-width: 300px;
+    width: 30%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     height:100px;
+    justify-content: center;
 }
 
 .navigation ul li{
@@ -22,21 +21,136 @@
 }
 
 .navigation ul a{
-    list-style: none;
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255 ,255,.4);
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
     text-decoration: none;
-    background-color: rgb(255, 0, 0, 0.7);
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    transition: ease-in 200ms;
+    text-transform: uppercase;
+    background: #262c37;
+    padding: 10px 30px;
+    transition: .5s;
+    transition-delay: .5s;
 }
 
 .navigation ul a:hover{
-    border-bottom: 3px solid red;
-    color: red;
-    background-color: rgb(255, 0, 0, 0.3);
+    color: #00eeff;
+    letter-spacing: .25em;
+    text-shadow: 0 0 5px #00eeff;
+    transition-delay: 1ms;
 }
+
+.navigation ul a span{
+    position: absolute;
+    display: block;
+    background: #00eeff;
+    box-shadow: 0 0 5px #00eeff;
+}
+
+.navigation ul a span:nth-child(1){
+    left: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation ul a:hover span:nth-child(1){
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.navigation ul a span:nth-child(2){
+    right: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation ul a:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation ul a span:nth-child(3){
+    right: 0;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform .5s;
+    transition-delay: .4s;
+}
+
+.navigation ul a:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.navigation ul a span:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform .5s;
+    transition-delay: .4s;
+}
+
+.navigation ul a:hover span:nth-child(4){
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.navigation ul a span:nth-child(5){
+    left: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-delay: .8s;
+}
+
+.navigation ul a:hover span:nth-child(5){
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation ul a span:nth-child(6){
+    right: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-delay: .8s;
+}
+
+.navigation ul a:hover span:nth-child(6){
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
     .navigation ul{       
