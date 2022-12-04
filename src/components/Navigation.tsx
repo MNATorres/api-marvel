@@ -8,7 +8,7 @@ export default function Navigation() {
         <div className="navigation">
             <ul>
                 <li>
-                    <NavLink to="/api-marvel/Events"> Events
+                    <NavLink to="/"> Events
                         <span></span>
                         <span></span>
                         <span></span>
@@ -17,7 +17,7 @@ export default function Navigation() {
                         <span></span>
                     </NavLink>
                 </li>
-                <li><NavLink to="/api-marvel/">Comics
+                <li><NavLink to="/apiMarvel/Comics">Comics
                     <span></span>
                     <span></span>
                     <span></span>
@@ -25,7 +25,7 @@ export default function Navigation() {
                     <span></span>
                     <span></span>
                 </NavLink></li>
-                <li><NavLink to="/api-marvel/Series"> Series
+                <li><NavLink to="/apiMarvel/Series"> Series
                     <span></span>
                     <span></span>
                     <span></span>
@@ -33,7 +33,7 @@ export default function Navigation() {
                     <span></span>
                     <span></span>
                 </NavLink></li>
-                <li><NavLink to="/api-marvel/Characters">Characters
+                <li><NavLink to="/apiMarvel/Characters">Characters
                     <span></span>
                     <span></span>
                     <span></span>

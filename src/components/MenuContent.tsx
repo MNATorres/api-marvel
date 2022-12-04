@@ -25,7 +25,7 @@ export default function MenuContent() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        style={{color: "white", fontSize: "15px"}}
+        style={{color: "#00eeff", fontSize: "15px"}}
       >
         Content <BiChevronDown style={{fontSize: "22px"}}/>
       </Button>
@@ -39,10 +39,10 @@ export default function MenuContent() {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/">Comics</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/">Events</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Series"> Series</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Characters">Characters</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Events"> Events</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}><NavLink to="/api-marvel/Comics"> Comics</NavLink></MenuItem>
       </Menu>
     </div>
   );

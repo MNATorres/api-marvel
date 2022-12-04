@@ -3,7 +3,7 @@
     max-width: 100vw;
     display: flex;
     justify-content: space-around;
-    color: white;
+    color: #00eeff;
     background-color: rgb(6, 12, 47);
     padding: 10px 0px;
     align-items: center;
@@ -25,18 +25,31 @@
 }
 
 .menuHeader button a{
-    color: white;
+    color: #00eeff;
     box-sizing: border-box;
     text-decoration: none;
     transition:ease 500ms;  
     font-size: 15px;
+    transition: ease 1s;
+
+}
+
+.menuHeader button a:hover{
+    text-shadow: 0 0 20px #00eeff;
+}
+
+.menuHeader button{
+    transition: ease 200ms;
 }
 
 .menuHeader button:hover{
-    border-bottom: 2px solid white;
+    
+    box-shadow: 0 0 10px #00eeff;
 }
 
-
+.MuiButton-sizeMedium:hover{
+    text-shadow: 0 0 20px #00eeff;
+}
 
 
 

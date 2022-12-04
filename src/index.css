@@ -6,13 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 331px;
-  width: 100%;
+  
   height: 100vh;
   color: #fff;
-  background: linear-gradient(45deg,rgb(27, 151, 223),rgb(5, 5, 61),rgb(109, 17, 132),rgb(5, 5, 66) ,rgb(47, 18, 75),rgb(5, 5, 61),rgb(109, 17, 132),rgb(27, 151, 223));
+  background: linear-gradient(45deg,rgb(109, 17, 132),rgb(27, 151, 223),rgb(60, 10, 73),rgb(5, 5, 61),rgb(109, 17, 132),rgb(5, 5, 66) ,rgb(109, 17, 132),rgb(47, 18, 75),rgb(5, 5, 61),rgb(109, 17, 132),rgb(27, 151, 223));
   background-size: 400% 1200%;
   position: relative;
-  animation: animarBody 10s ease infinite;
+  animation: animarBody 20s ease infinite;
 }
 
 @keyframes animarBody {
