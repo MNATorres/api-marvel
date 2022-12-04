@@ -2,6 +2,7 @@
     color: white;
     margin: 150px 0 150px 0;
     width: 100%;
+    height: 300px;
 }
 
 .navigation ul{
@@ -11,6 +12,8 @@
     flex-wrap: wrap;
     height:100px;
     justify-content: center;
+    padding: 0;
+
 }
 
 .navigation ul li{
@@ -36,7 +39,6 @@
 
 .navigation ul a:hover{
     color: #00eeff;
-    letter-spacing: .25em;
     text-shadow: 0 0 5px #00eeff;
     transition-delay: 1ms;
 }

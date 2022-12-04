@@ -8,7 +8,7 @@
 }
 
 .authorFooter{
-    background-color: red;
+    background-color: rgb(6, 12, 47);
     width: 100%;
     padding: 5px 0;
     color: rgb(231, 229, 229);
@@ -21,7 +21,7 @@
 
 .footerMovil{
     display: none;
-    background-color: red;
+    background-color: rgb(6, 12, 47);
 }
 
 @media screen and (max-width: 800px) {
@@ -31,7 +31,7 @@
 
     .footerMovil{
         display: unset;
-        background: red;
+        background: rgb(6, 12, 47);
     }
 
     .authorFooter{

@@ -14,7 +14,7 @@ export default function FooterMovil() {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    style={{ background: "red", color: "white" }}
+                    style={{ background: "rgb(6, 12, 47)", color: "white" }}
                 >
                     <Typography >CONTENT</Typography>
                 </AccordionSummary>
@@ -32,7 +32,7 @@ export default function FooterMovil() {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2a-content"
                     id="panel2a-header"
-                    style={{ background: "red", color: "white" }}
+                    style={{ background: "rgb(6, 12, 47)", color: "white" }}
                 >
                     <Typography>ABOUT THE DEVELOPER</Typography>
                 </AccordionSummary>
@@ -49,7 +49,7 @@ export default function FooterMovil() {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2a-content"
                     id="panel2a-header"
-                    style={{ background: "red", color: "white" }}
+                    style={{ background: "rgb(6, 12, 47)", color: "white" }}
                 >
                     <Typography>CONTACT INFORMATION</Typography>
                 </AccordionSummary>
@@ -66,7 +66,7 @@ export default function FooterMovil() {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2a-content"
                     id="panel2a-header"
-                    style={{ background: "red", color: "white" }}
+                    style={{ background: "rgb(6, 12, 47)", color: "white" }}
                 >
                     <Typography>OTHER PROJECTS</Typography>
                 </AccordionSummary>

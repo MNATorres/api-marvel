@@ -4,12 +4,12 @@
     height: 20em;
     color: black;
     box-sizing: border-box;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid rgb(6, 12, 47);
     
 }
 
 .slide-pane__header{
-    background-color: red;
+    background-color: rgb(6, 12, 47);
     color: white;
 }
 
@@ -25,7 +25,7 @@
     padding: 5px;
     transition: ease-in-out 400ms;
     color: white;
-    background-color: red;
+    background-color: rgb(6, 12, 47);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -33,5 +33,5 @@
 }
 
 .buttonFooter button:hover{
-    background-color: rgb(255, 0, 0, 0.8);
+    background-color: rgb(6, 12, 47);
 }

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     color: white;
-    background-color: rgb(164, 14, 14);
+    background-color: rgb(6, 12, 47);
     padding: 10px 0px;
     align-items: center;
     
@@ -45,7 +45,7 @@
     .containerHeader{
         position: fixed;
         align-items: center;
-        background-color: rgba(255, 0, 0, 0.8);
+        background-color: rgb(6, 12, 47);
         z-index: 10;
     }
 

@@ -1,8 +1,10 @@
 .acordeonFooter{
-    background-color: rgb(255, 0, 0, 0.5);
+    background-color: rgb(6, 12, 47);
 }
 
-
+.css-i4bv87-MuiSvgIcon-root{
+    color: white;
+}
 
 .listFooterMovil li{
     margin-bottom: 5px;
