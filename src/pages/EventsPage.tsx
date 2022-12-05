@@ -3,13 +3,14 @@ import { CuadriculaMovil } from "../components/CuadriculaMovil";
 import { SimplePage } from "../components/SimplePage";
 import SlideshowInfinito from "../components/Slideshow";
 import { getEvents } from "../services/api";
+import './../styles/EventsPage.css';
 
 function EventsPage(){
     return(
         <SimplePage>
         <SlideshowInfinito />
 
-        <div className="containerCommunity">
+        <div className="containerEvents">
         <CuadriculaDesktop
                    fetcher={getEvents}
                 />
@@ -18,7 +19,7 @@ function EventsPage(){
                     <CuadriculaMovil
                         fetcher={getEvents}
                     />
-+                </div>
+               </div>
                 
                 
         </div>

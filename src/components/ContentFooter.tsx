@@ -6,7 +6,7 @@ export default function ContentFooter() {
         <div className="contentFooter">
             <ul >
                 <li><h3>Content</h3></li>
-                <li><NavLink to="/">Events</NavLink></li>
+                <li><NavLink to="/apiMarvel">Events</NavLink></li>
                 <li><NavLink to="/apiMarvel/Characters">Characters</NavLink></li>
                 <li><NavLink to="/apiMarvel/Creators">Creators</NavLink></li>
                 <li><NavLink to="/apiMarvel/Comics">Comics</NavLink></li>

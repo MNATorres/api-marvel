@@ -20,7 +20,7 @@ export default function FooterMovil() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <ul className='listFooterMovil'>
-                        <li><NavLink to="/">Events</NavLink></li>
+                        <li><NavLink to="/apiMarvel">Events</NavLink></li>
                         <li><NavLink to="/apiMarvel/Characters">Characters</NavLink></li>
                         <li><NavLink to="/apiMarvel/Comics"> Comics</NavLink></li>
                         <li><NavLink to="/apiMarvel/Series"> Series</NavLink></li>

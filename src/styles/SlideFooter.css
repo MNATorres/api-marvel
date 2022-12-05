@@ -18,20 +18,23 @@
    margin: 0 auto -8px;
    display: flex;
    justify-content: center;
+   
 }
 
 .buttonFooter button{
     border: none;
-    padding: 5px;
+    padding: 10px;
     transition: ease-in-out 400ms;
-    color: white;
+    color:#00eeff;
     background-color: rgb(6, 12, 47);
     border-radius: 4px;
     display: flex;
     align-items: center;
-   
+    cursor: pointer;
 }
 
 .buttonFooter button:hover{
     background-color: rgb(6, 12, 47);
+    text-shadow: 0 0 5px #00eeff;
+    font-size: 15px;
 }

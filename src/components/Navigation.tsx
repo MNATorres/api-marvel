@@ -8,7 +8,7 @@ export default function Navigation() {
         <div className="navigation">
             <ul>
                 <li>
-                    <NavLink to="/"> Events
+                    <NavLink to="/apiMarvel"> Events
                         <span></span>
                         <span></span>
                         <span></span>

@@ -1,22 +1,31 @@
+.slide-pane__content{
+    background-color: rgb(8, 20, 53);
+    
+}
+
 .containerFooter{
     position: relative;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
     padding: 0;
-   
 }
 
 .authorFooter{
     background-color: rgb(6, 12, 47);
     width: 100%;
     padding: 5px 0;
-    color: rgb(231, 229, 229);
     
 }
 
 .authorFooter p{
     padding: 0 10px;
+    color: #00eeff;
+    transition: ease-in-out 500ms;
+}
+
+.authorFooter p:hover{
+    text-shadow: 0 0 5px #00eeff;
 }
 
 .footerMovil{

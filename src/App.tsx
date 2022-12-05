@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<EventsPage />} />
+        <Route path='/apiMarvel' element={<EventsPage />} />
         <Route path='/apiMarvel/Characters' element={<CharactersPage />} />
         <Route path='/apiMarvel/Comics' element={<HomePage />} />
         <Route path='/apiMarvel/Series' element={<Series />} />

@@ -42,7 +42,7 @@ export default function TemporaryDrawer() {
       <List>
         <ul className='listMenumovil2'>
           <li><h3>Content</h3></li>
-          <li><NavLink to="/">Events</NavLink></li>
+          <li><NavLink to="/apiMarvel">Events</NavLink></li>
           <li><NavLink to="/apiMarvel/Characters">Characters</NavLink></li>
           <li><NavLink to="/apiMarvel/Events"> Comics</NavLink></li>
           <li><NavLink to="/apiMarvel/Series"> Series</NavLink></li>

@@ -2,18 +2,39 @@
     display: flex;
     justify-content: space-around;
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 0 auto;  
+}
+
+.slide-pane__close div svg{
+    color: #00eeff;
+    transition: ease 200ms; 
     
+}
+
+.slide-pane__close:hover{
+    box-shadow: 0 0 5px #00eeff;
+}
+
+.slide-pane__title{
+    color: #00eeff;
+    text-shadow: 0 0 5px #00eeff;
 }
 
 .contentFooter li, .contentFooter li a{
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: white;
     transition: ease-in-out 200ms;
 }
 
+.contentFooter ul li h3{
+    color: #00eeff;
+    font-size: 22px;
+    text-shadow: 0 0 3px #00eeff;
+}
+
 .contentFooter li a:hover{
-    color: red;
+    color: #00eeff;
+    text-shadow: 0 0 1px #00eeff;
     font-weight: bold;
 }

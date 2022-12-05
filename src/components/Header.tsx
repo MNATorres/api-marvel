@@ -8,7 +8,7 @@ function Header() {
     return (
         <div className="containerHeader">
             <div>
-                <NavLink to="/">
+                <NavLink to="/apiMarvel">
                     <img className="logoHeader" src="https://i.imgur.com/4Rsjob3.png" alt="Logo" />
                 </NavLink>
             </div>

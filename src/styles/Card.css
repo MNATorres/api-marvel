@@ -10,6 +10,14 @@
     max-width: 60%; 
 }
 
+.src-NewsHeaderCard-NewsHeaderBackground-styles-module__news-header-background--38y5L{
+  transition: ease 500ms;
+}
+
+.src-NewsHeaderCard-NewsHeaderBackground-styles-module__news-header-background--38y5L:hover{
+  box-shadow: 0 0 15px #00eeff;
+}
+
 
 .src-NewsHeaderCard-NewsHeaderBackground-styles-module__news-header-background--38y5L::before, .src-NewsHeaderCard-NewsHeaderBackground-styles-module__news-header-background--38y5L::after {
   content: '';

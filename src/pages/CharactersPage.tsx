@@ -3,6 +3,7 @@ import { SimplePage } from "../components/SimplePage";
 import { getCharacters } from "../services/api";
 import { CuadriculaMovil } from "../components/CuadriculaMovil";
 import SlideshowInfinito from "../components/Slideshow";
+import './../styles/CharactersPage.css';
 
 function CharactersPage() {
     return (
