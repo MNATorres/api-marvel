@@ -4,7 +4,7 @@ import Video from './Video';
 
 export default function ParralaxContainer() {
     return (
-        <Parallax blur={1} bgImage="https://www.wallpapertip.com/wmimgs/66-662113_desktop-dark-backgrounds-4k.png" bgImageAlt="the cat" strength={400} style={{margin: '100px 0 200px'}}>
+        <Parallax blur={1} bgImage="https://img2.rtve.es/i/?w=1600&i=1642710124434.jpg" bgImageAlt="the cat" strength={250} style={{margin: '100px 0 200px'}}>
             <div className="containerParallax" style={{padding: '50px 0'}}>
                 <TitleAnimation />
                 <Video />
